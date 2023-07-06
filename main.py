@@ -10,6 +10,7 @@ def temp():
     thesis = thesis_input.get(1.0 , END)
     essay = api_call(thesis)
     essay_lbl.config(state="normal")
+    essay_lbl.delete(1.0, END)
     essay_lbl.insert(END, essay)
     essay_lbl.config(state='disabled')
 
